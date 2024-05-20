@@ -32,7 +32,7 @@ const Banner = () => {
         <img
           src={rome}
           alt="colosium"
-          className="w-40 md:w-56 absolute bottom-[9%] right-[8vh] animate-float3"
+          className="w-40 md:w-56 absolute bottom-[9%] right-[5vh] animate-float3"
         ></img>
         <div className="absolute inset-x-0 bottom-5 font-light flex justify-center items-center hover:cursor-pointer">
           <span>Learn more</span>
