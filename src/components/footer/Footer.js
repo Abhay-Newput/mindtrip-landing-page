@@ -11,9 +11,9 @@ const Footer = () => {
         className="mx-auto w-full py-24 "
         style={{ backgroundColor: "#f9f9f9" }}
       >
-        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-10 ml-[40px] sm:grid-cols-3 md:grid-cols-4 ">
           <div className="col-span-2">
-            <div className="flex items-center font-semibold hover:cursor-pointer hover:opacity-65 ml-20">
+            <div className="flex items-center font-semibold hover:cursor-pointer hover:opacity-65  sm:ml-0 lg:ml-20">
               <IoSparklesSharp className="gap-[.5rem] text-3xl" />
               <p className="text-2xl">{dataHelper().mindtrip_smallCase}</p>
               <span className="text-2xl">.</span>

@@ -4,19 +4,19 @@ import { dataHelper } from "../../data-helper";
 
 const KindOf = () => {
   return (
-    <div className="mx-auto w-full max-w-[calc(90rem+(var(--container-pad)*2))] px-container py-12 sm:py-24">
+    <div className="mx-auto w-11/12 py-12 sm:py-24">
       <div className="grid items-center gap-8 @container sm:gap-10 md:-ml-container md:grid-cols-2">
-        <div className="overflow-hidden rounded-4xl @[94.25rem]:!rounded-4xl md:rounded-l-none md:rounded-r-4xl">
+        <div className="overflow-hidden rounded-4xl @[94.25rem]:!rounded-4xl md:rounded-l-none md:rounded-[40px]">
           <img
             src={kindImg}
             alt="Kind"
             width="720"
             height="641"
-            className="mx-auto overflow-hidden rounded-[inherit]"
+            className="mx-auto overflow-hidden rounded-[40px]"
           />
         </div>
-        <div className="mx-auto w-full max-w-md">
-          <h3 className="max-w-[10em] text-4xl font-semibold sm:text-5xl">
+        <div className="mx-auto w-full max-w-md md:ml-5">
+          <h3 className="max-w-[10em] text-4xl font-semibold sm:text-5xl ">
             {dataHelper().kind_of}
           </h3>
           <p className="my-5 max-w-[46ch] text-pretty text-lg">

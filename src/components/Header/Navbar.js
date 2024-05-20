@@ -8,7 +8,7 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <div className="fixed inset-x-0 z-10 flex h-16 items-center px-4 duration-500 bg-background/80 backdrop-blur-md">
-      <div className="basis-1/2 items-center gap-2.5 md:flex">
+      <div className=" items-center gap-2.5 md:flex md:basis-1/2">
         <button className="border border-transparent rounded-full font-light p-2  bg-transparent blackA1 text-sm">
           <BiMenuAltLeft className="size-6" />
         </button>
@@ -35,6 +35,7 @@ const Navbar = () => {
           //   boxShadow:
           //     "0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)",
           // }}
+          className="hidden md:block"
         >
           {dataHelper().creator_program}
         </Box>
@@ -61,15 +62,18 @@ const Navbar = () => {
           //   boxShadow:
           //     "0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)",
           // }}
+          className="hidden lg:block"
         >
           {dataHelper().start_exploring}
         </Box>
       </div>
       <div className="flex items-center font-semibold hover:cursor-pointer hover:opacity-65">
-        <IoSparklesSharp className="gap-[.5rem] text-3xl" />
-        <p className="text-2xl">{dataHelper().mindtrip_smallCase}</p>
+        <IoSparklesSharp className="gap-[.5rem]  text-2xl md:text-3xl" />
+        <p className="text-[1rem] md:text-2xl ">
+          {dataHelper().mindtrip_smallCase}
+        </p>
         <span className="text-2xl">.</span>
-        <span className="text-xs font-extralight px-1 h-4 rounded  bg-black text-white">
+        <span className=" text-[8px] md:text-xs font-extralight px-1 md:h-4 rounded  bg-black text-white">
           {dataHelper().beta}
         </span>
       </div>
@@ -123,6 +127,7 @@ const Navbar = () => {
           //   boxShadow:
           //     "0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)",
           // }}
+          className="hidden md:block"
         >
           {dataHelper().get_started}
         </Box>

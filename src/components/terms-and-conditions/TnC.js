@@ -12,7 +12,7 @@ const TnC = () => {
   return (
     <div className="mx-auto w-full">
       <div className="flex flex-col items-center justify-between gap-10 pb-11 pt-5 lg:flex-row lg:gap-5">
-        <p className="flex gap-8 mr-20">
+        <p className="flex gap-8 lg:mr-20">
           <FaInstagram size={20} />
           <FaTiktok size={20} />
           <FaFacebookF size={20} />
@@ -20,7 +20,7 @@ const TnC = () => {
           <FaYoutube size={20} />
           <FaLinkedinIn size={20} />
         </p>
-        <p className="flex flex-col items-center justify-center gap-2.5 ml-20 text-center text-sm text-muted sm:flex-row sm:gap-5 lg:order-first">
+        <p className="flex flex-col items-center justify-center gap-2.5 sm:ml-0 lg:ml-20 text-center text-sm text-muted sm:flex-row sm:gap-5 lg:order-first">
           <span>{dataHelper().tnc}</span>
           <span className="flex justify-center gap-5">
             <a

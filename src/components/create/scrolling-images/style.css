@@ -3,8 +3,16 @@
     transform: translate3d(0, 100%, 0);
     opacity: 1;
   }
-  90% {
-    transform: translate3d(0, -100%, 0);
+  25% {
+    transform: translate3d(0, 50%, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+  75% {
+    transform: translate3d(0, -50%, 0);
     opacity: 1;
   }
   100% {

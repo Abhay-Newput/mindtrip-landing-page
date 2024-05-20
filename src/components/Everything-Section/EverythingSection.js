@@ -18,7 +18,7 @@ const EverythingSection = () => {
           <br />
           {dataHelper().for_your_next_adventure}
         </h2>
-        <div className="flex flex-row flex-wrap mx-auto">
+        <div className="flex flex-row flex-wrap mx-auto ">
           {everythingCardData.map((item, index) => {
             if (index === 0 || index === 3) {
               return <HorizontalCard key={index} data={[item]} />;

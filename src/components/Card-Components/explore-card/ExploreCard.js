@@ -22,16 +22,16 @@ const ExploreCard = ({ data }) => {
     7: explore8,
   };
   return (
-    <div className="-mx-container md:px-6">
+    <div className="-mx-container  ">
       <ul
         className="scrollbar-hide -mt-1 flex max-w-5xl snap-x snap-mandatory 
       scroll-pl-[--container-pad] gap-[--grid-card-gap] overflow-auto text-pretty pt-1 text-sm 
-      leading-tight *:shrink-0 *:basis-56 *:snap-start md:mx-auto md:flex-wrap md:justify-center"
+      leading-tight *:shrink-0 *:basis-56 *:snap-start md:mx-auto md:flex-wrap md:justify-center "
       >
         {data.map((item, id) => (
           <li
             key={id}
-            className="transition-transform hover:-translate-y-1 m-3"
+            className="transition-transform hover:-translate-y-1 m-3 flex-none w-[calc(33.333%-1rem)] md:w-[calc(33.333%-2rem)]"
           >
             <div className="relative mb-4 aspect-[7/8] overflow-hidden rounded-2xl">
               <img

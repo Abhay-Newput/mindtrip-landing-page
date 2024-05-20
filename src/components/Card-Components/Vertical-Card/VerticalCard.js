@@ -2,12 +2,11 @@ import React from "react";
 
 const VerticalCard = ({ data }) => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto py-10">
       {data.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col gap-6 mx-auto bg-white rounded-[40px] p-6 sm:gap-10 sm:p-16"
-          style={{ height: "800px" }}
+          className="flex flex-col gap-6 mx-auto bg-white rounded-[40px] p-6 sm:gap-10 h-[600px] md:h-[800px] w-11/12 md:w-full"
         >
           <div className="-mx-6 lg:order-last">
             <img
